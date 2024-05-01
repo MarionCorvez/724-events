@@ -36,7 +36,9 @@ describe("When slider is created", () => {
       </DataProvider>
     );
     await screen.findByText("World economic forum");
-    await screen.findByText("janvier");
+    // Remplacement de "janvier" par "février" pour correspondre aux données
+    // Mais l'erreur persiste
+    await screen.findByText("février");
     await screen.findByText(
       "Oeuvre à la coopération entre le secteur public et le privé."
     );

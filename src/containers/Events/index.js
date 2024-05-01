@@ -13,25 +13,26 @@ const EventList = () => {
   const { data, error } = useData();
   const [type, setType] = useState();
   const [currentPage, setCurrentPage] = useState(1);
-  const filteredEvents = (
-    (!type
-      ? data?.events
-      : data?.events) || []
-  ).filter((event, index) => {
-    if (
-      (currentPage - 1) * PER_PAGE <= index &&
-      PER_PAGE * currentPage > index
-    ) {
-      return true;
+
+  // Ajouter / Corriger les filtres événements ici
+  const filteredEvents = ((!type ? data?.events : data?.events) || []).filter(
+    (event, index) => {
+      if (
+        (currentPage - 1) * PER_PAGE <= index &&
+        PER_PAGE * currentPage > index
+      ) {
+        return true;
+      }
+      return false;
     }
-    return false;
-  });
+  );
   const changeType = (evtType) => {
     setCurrentPage(1);
     setType(evtType);
   };
   const pageNumber = Math.floor((filteredEvents?.length || 0) / PER_PAGE) + 1;
   const typeList = new Set(data?.events.map((event) => event.type));
+  // Ajout du imageAlt pour remplacer la valeur par défaut
   return (
     <>
       {error && <div>An error occured</div>}
@@ -51,6 +52,7 @@ const EventList = () => {
                   <EventCard
                     onClick={() => setIsOpened(true)}
                     imageSrc={event.cover}
+                    imageAlt={event.title}
                     title={event.title}
                     date={new Date(event.date)}
                     label={event.type}
