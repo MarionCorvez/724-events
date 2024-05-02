@@ -5,6 +5,7 @@
 ![sass][sass-badge]
 ![javascript][javascript-badge]
 ![react][react-badge]
+![jest][jest-badge]
 ![vscode][vscode-badge]
 
 ![Logo 724 Events](https://raw.githubusercontent.com/MarionCorvez/724-events/main/public/images/evangeline-shaw-nwLTVwb7DbU-unsplash1.png)
@@ -39,8 +40,8 @@ Le design a été validé, et un premier développeur freelance a commencé l’
 
 1. [x] Étape 1 : Mettre en place son environnement de développement
 2. [x] Étape 2 : Installer React Developer Tools
-3. [ ] Étape 3 : Rédiger le cahier de recette
-4. [ ] Étape 4 : Réparer les erreurs de la console
+3. [x] Étape 3 : Rédiger le cahier de recette
+4. [x] Étape 4 : Réparer les erreurs de la console
 5. [ ] Étape 5 : Cooriger les erreurs du cahier de recette
 6. [ ] Étape 6 : Valider les tests
 7. [ ] Étape 7 : Ajouter des tests additionnels
@@ -60,3 +61,4 @@ Le design a été validé, et un premier développeur freelance a commencé l’
 [javascript-badge]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [react-badge]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [vscode-badge]: https://img.shields.io/badge/Made%20with-VSCode-1f425f.svg?style=for-the-badge&logoColor=white
+[jest-badge]: https://img.shields.io/badge/Jest-239120?style=for-the-badge&logo=Jest&logoColor=white

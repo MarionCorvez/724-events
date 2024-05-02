@@ -7,6 +7,8 @@ export const FIELD_TYPES = {
   TEXTAREA: 2,
 };
 
+// Ajout de l'attribut "required" sur tous les champs du formulaire
+
 const Field = ({ type = FIELD_TYPES.INPUT_TEXT, label, name, placeholder }) => {
   let component;
   switch (type) {
@@ -17,11 +19,12 @@ const Field = ({ type = FIELD_TYPES.INPUT_TEXT, label, name, placeholder }) => {
           name={name}
           placeholder={placeholder}
           data-testid="field-testid"
+          required
         />
       );
       break;
     case FIELD_TYPES.TEXTAREA:
-      component = <textarea name={name} data-testid="field-testid" />;
+      component = <textarea name={name} data-testid="field-testid" required />;
       break;
     default:
       component = (
@@ -30,6 +33,7 @@ const Field = ({ type = FIELD_TYPES.INPUT_TEXT, label, name, placeholder }) => {
           name={name}
           placeholder={placeholder}
           data-testid="field-testid"
+          required
         />
       );
   }
@@ -47,11 +51,11 @@ Field.propTypes = {
   label: PropTypes.string,
   placeholder: PropTypes.string,
 };
- Field.defaultProps = {
-   label: "",
-   placeholder: "",
-   type: FIELD_TYPES.INPUT_TEXT,
-   name: "field-name",
- }
+Field.defaultProps = {
+  label: "",
+  placeholder: "",
+  type: FIELD_TYPES.INPUT_TEXT,
+  name: "field-name",
+};
 
 export default Field;
