@@ -42,7 +42,7 @@ Le design a été validé, et un premier développeur freelance a commencé l’
 2. [x] Étape 2 : Installer React Developer Tools
 3. [x] Étape 3 : Rédiger le cahier de recette
 4. [x] Étape 4 : Réparer les erreurs de la console
-5. [ ] Étape 5 : Cooriger les erreurs du cahier de recette
+5. [ ] Étape 5 : Corriger les erreurs du cahier de recette
 6. [ ] Étape 6 : Valider les tests
 7. [ ] Étape 7 : Ajouter des tests additionnels
 8. [ ] Étape 8 : Mettre le site en ligne

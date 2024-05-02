@@ -16,9 +16,11 @@ const Form = ({ onSuccess, onError }) => {
       evt.preventDefault();
       setSending(true);
       // We try to call mockContactApi
+      // La valeur de "onSuccess" n'était pas modifiée si le formulaire était correctement envoyé
       try {
         await mockContactApi();
         setSending(false);
+        onSuccess(true);
       } catch (err) {
         setSending(false);
         onError(err);
