@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 import Form from "./index";
 
 describe("When Events is created", () => {
@@ -22,6 +22,9 @@ describe("When Events is created", () => {
         })
       );
       await screen.findByText("En cours");
+      // Le helper "act()" permet de s'assurer que les interactions sont appliquées
+      // Les temporisateurs sont avancés et les micro-tâches exécutées
+      act(() => jest.advanceTimersByTime(5000));
       await screen.findByText("Envoyer");
       expect(onSuccess).toHaveBeenCalled();
     });
