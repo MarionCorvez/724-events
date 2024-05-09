@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import Button, { BUTTON_TYPES } from "./index";
 
+// Le test fonctionne lorsqu'il est lancé manuellement
 describe("When a button is created", () => {
   it("the button must include a title", () => {
     render(<Button title="my-button" type={BUTTON_TYPES.DEFAULT} />);

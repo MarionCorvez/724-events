@@ -18,6 +18,7 @@ const data = {
   ],
 };
 
+// Le test correspond à la modale et fonctionne lorsqu'il est lancé manuellement
 describe("When Modal data is created", () => {
   it("a list of mandatories data is displayed", async () => {
     render(<ModalEvent event={data} />);

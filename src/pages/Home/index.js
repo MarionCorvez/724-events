@@ -60,14 +60,20 @@ const Page = () => {
             </ServiceCard>
           </div>
         </section>
-        <section className="EventsContainer" id="nos-realisations">
+        {/* Ajout d'un data-testid pour les tests */}
+        <section
+          className="EventsContainer"
+          id="nos-realisations"
+          data-testid="events-testid"
+        >
           <h2 className="Title">Nos réalisations</h2>
           <EventList />
         </section>
         <section className="PeoplesContainer" id="notre-equipe">
           <h2 className="Title">Notre équipe</h2>
           <p>Une équipe d’experts dédiés à l’ogranisation de vos événements</p>
-          <div className="ListContainer">
+          {/* Ajout d'un data-testid pour les tests */}
+          <div className="ListContainer" data-testid="people-testid">
             <PeopleCard
               imageSrc="/images/stephanie-liverani-Zz5LQe-VSMY-unsplash.png"
               name="Samira"
@@ -119,8 +125,9 @@ const Page = () => {
           </Modal>
         </div>
       </main>
-      <footer className="row">
-        <div className="col presta">
+      {/* Ajout de data-testid pour les tests */}
+      <footer data-testid="footer-testid" className="row">
+        <div className="col presta" data-testid="card-testid">
           <h3>Notre dernière prestation</h3>
           {data && ( // Vérification de la présence de data pour afficher le composant
             <EventCard

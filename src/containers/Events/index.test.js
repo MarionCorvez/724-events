@@ -37,6 +37,7 @@ const data = {
   ],
 };
 
+// Ajout et suppression de "only" pour lancer les tests
 describe("When Events is created", () => {
   it("a list of event card is displayed", async () => {
     api.loadData = jest.fn().mockReturnValue(data);
@@ -88,7 +89,7 @@ describe("When Events is created", () => {
   });
 
   describe("and we click on an event", () => {
-    it("the event detail is displayed", async () => {
+    it.only("the event detail is displayed", async () => {
       api.loadData = jest.fn().mockReturnValue(data);
       render(
         <DataProvider>

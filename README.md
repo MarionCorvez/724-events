@@ -44,7 +44,7 @@ Le design a été validé, et un premier développeur freelance a commencé l’
 4. [x] Étape 4 : Réparer les erreurs de la console
 5. [x] Étape 5 : Corriger les erreurs du cahier de recette
 6. [x] Étape 6 : Valider les tests
-7. [ ] Étape 7 : Ajouter des tests additionnels
+7. [x] Étape 7 : Ajouter des tests additionnels
 8. [ ] Étape 8 : Mettre le site en ligne
 9. [ ] Étape 9 : Préparer la soutenance
 

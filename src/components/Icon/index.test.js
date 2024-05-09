@@ -11,9 +11,14 @@ describe("Icon component", () => {
       );
     });
   });
+
+  // Ajout d'un test unitaire pour vérifier que l'icône créée est bien celle de Facebook
   describe("When an icon is created with name facebook", () => {
     it("the icon contains this path hash value bbea4c9e40773b969fdb6e406059f853", () => {
-      // to complete
+      render(<Icon name="facebook" />);
+      expect(md5(screen.getByTestId("icon").getAttribute("d"))).toEqual(
+        "bbea4c9e40773b969fdb6e406059f853"
+      );
     });
   });
 });
