@@ -1,7 +1,7 @@
 {
   "name": "724-events",
   "version": "0.1.0",
-  "homepage": "https://marioncorvez.github.io/724-events",
+  "homepage": "https://MarionCorvez.github.io/724-events",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
